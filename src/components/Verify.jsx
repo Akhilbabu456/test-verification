@@ -84,6 +84,7 @@ const Verify = () => {
 
     setIsVerifyButtonDisabled(true);
     try {
+      console.log("user",user);
       const data = await user.confirm(otp);
       dispatch(successTrue());
       console.log(data);
